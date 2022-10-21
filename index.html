@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Jazminne</title>
+    <style>
+        .body{
+            background-color: bisque;
+            text-align: center;
+        }
+
+        .body__title{
+            color:blueviolet;
+        }
+
+        .body{
+            width: 100%;
+            border-radius: 50%;
+
+        }
+
+
+    </style>
+</head>
+<body class="body">
+    <h1 class="body__title">Jazminne, ¿Te consideras una chica linda?</h1>
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNyMsMYp932FOTSDWZxoExfm9xLzcq7R7aPaW_YekeUwV1XEcJcs78lmalLfcNUzcoYd4JOBMrOEftG1YtRU0JiCNr2_DDvwC7TyIBXrOG2F-NITryX8yXPF8Au14qS3uIZMdRd_cvOp3ZxwXHvidHm5kJMOUu3aAP6tQ4GUB8t1GIvWRf8_Sn1ZDL/w360-h509/jazimg.jpeg" 
+         alt="fotoJaz" class="body__img"/>
+         <br></br>
+    <button id="yes">Shiii😄</button>
+    <button id="no">No😟</button>
+
+    <script>
+        const botonSi = document.getElementById('yes');
+        const botonNo = document.getElementById('no');
+
+        const eresHermosa = () => {
+            alert('🌻 Nunca lo dudes, eres una chica muy hermosa 🌻');
+            alert('😇 No solo eres hermosa, tienes un corazón muy bonito 😇');
+            alert('💉 Tampoco dudes que serás una excelente profesional 💉');
+            alert('🏀 Y por si fuera poco, eres una linda y talentosa basketbolista 🏀');
+            alert('ERES TODO ESTO Y MÁS 😊');
+            location.href = 'https://www.youtube.com/watch?v=N-234liLjIg';
+        }
+
+        const moverBotonNo = () => {
+            botonNo.style.position = 'absolute';
+            botonNo.style.top = (Math.random()* window.innerHeight) + 'px';
+            botonNo.style.top = (Math.random()* window.innerWidth) + 'px';
+        }
+
+        botonSi.addEventListener('click', eresHermosa);
+        botonNo.addEventListener('mouseover', moverBotonNo);
+    </script>
+
+</body>
+</html>
